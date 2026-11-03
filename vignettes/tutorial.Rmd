@@ -1,0 +1,30 @@
+---
+title: "tutorial"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{tutorial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(test.package.11.3.26)
+```
+
+test function `square`
+```{r}
+square(3)
+```
+
+include plot:
+```{r echo = FALSE}
+plot(1:10, square(1:10))
+```
+
